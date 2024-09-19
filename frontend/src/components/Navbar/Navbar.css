@@ -1,0 +1,106 @@
+.navbar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 150px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557E;
+    font-size: 18px;
+}
+
+.navbar-menu .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557E;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-search-icon{
+position: relative;
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+.navbar-right button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557E;
+    border: 1px solid lightgreen;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar-right button:hover {
+    background: #fff4f2;
+}
+
+.navbar-profile{
+    position: relative;
+
+}
+.navbar-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.navbar-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.navbar-profile-dropdown img{
+    width: 20px;
+}
+.navbar-profile-dropdown li:hover{
+    color: lightgreen;
+}
+.navbar-profile:hover .navbar-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f6ffef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid greenyellow;
+    outline: 2px solid white;
+    list-style: none;
+}
+.navbar-profile hr{
+    background-color: gray;
+    height: 1px;
+    border: none;
+}
+
+.head{
+    font-size: 1.5rem; /* Adjusts the font size to make it big */
+    color: #28a745; /* A vibrant green color */
+ /* Large shadow with slight transparency */
+    font-weight: bold; /* Ensures the text has a strong visual weight */
+    letter-spacing: 1.5px; /* Adds space between characters for a cleaner look */
+    margin: 20px 0;
+}
